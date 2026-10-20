@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './components/KartuMenu.jsx'
-import './components/LabelHarga.jsx'
-import './components/Panel.jsx'
+// import './components/KartuMenu.jsx'
+// import './components/LabelHarga.jsx'
+// import './components/Panel.jsx'
 
 const NAMA_PANGGILAN ='Tegar'
 const N = 74
@@ -16,10 +16,13 @@ function App(){
       <h1 className="judul" style={gayaJudul}>Kanti {NAMA_PANGGILAN} </h1> 
       <p>{jam < 12 ? "Selamat Pagi" : "Selamat Siang"}</p>
       <p>Saldo awal kartu Kantin : RP {(N*1000).toLocaleString('id-ID')}</p> 
+      
+      {/* <Panel judul='Menu Hari Ini'>
+        <button onClick={BalikUrutan}>Balik Urutan</button>
+      </Panel> */}
       <button disabled>Bayar</button>
     </>
   )
-  
 }
 
 export default App
